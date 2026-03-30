@@ -1,6 +1,7 @@
 // --- Menú hamburguesa con barra fija ---
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
+const menuLinks = document.querySelectorAll(".menu a");
 
 if (menuToggle) {
   menuToggle.addEventListener("click", () => {
@@ -12,6 +13,23 @@ if (menuToggle) {
     }
   });
 }
+
+// --- Cerrar menú al hacer clic en un enlace y scroll suave ---
+menuLinks.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const targetId = link.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Cierra el menú en móviles
+    menu.classList.remove("active");
+    menu.style.display = "none";
+  });
+});
 
 // --- Formulario de inscripción ---
 const inscripcionForm = document.getElementById('inscripcionForm');
