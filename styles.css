@@ -1,95 +1,148 @@
 /* Tipografías */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans&display=swap');
 
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: #000; /* Fondo negro */
+  color: #fff;      /* Texto claro */
 }
 
 header {
-  background: #222;
-  color: #fff;
-  padding: 20px;
+  background: #000;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  padding: 30px 20px;
+}
+
+header svg {
+  display: block;
+  margin: auto;
+}
+
+header .contacto {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
 }
 
 nav {
-  background: #444;
-  padding: 10px;
+  background: #111;
+  padding: 15px;
   text-align: center;
 }
 
 nav a {
   color: #fff;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
 
+nav a:hover {
+  color: #e63946;
+}
+
 section {
-  padding: 40px;
-  max-width: 900px;
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
 h2 {
   font-family: 'Montserrat', sans-serif;
-  color: #222;
-  border-bottom: 2px solid #ddd;
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
   padding-bottom: 10px;
 }
 
 p {
   line-height: 1.6;
+  color: #ddd;
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
 }
 
 button {
   background: #e63946;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
-  margin-top: 10px;
+  margin-top: 15px;
   cursor: pointer;
   border-radius: 4px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 button:hover {
   background: #d62828;
 }
 
+button.inscribete {
+  background: #2a9d8f; /* Verde para inscripción */
+}
+
+button.inscribete:hover {
+  background: #21867a;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border: 1px solid #444;
   border-radius: 4px;
+  background: #111;
+  color: #fff;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888;
 }
 
 footer {
-  background: #222;
-  color: #fff;
+  background: #111;
+  color: #ccc;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
 }
 
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .votacion {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #111;
+  border: 1px solid #333;
   border-radius: 6px;
   padding: 20px;
   margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .votacion h3 {
