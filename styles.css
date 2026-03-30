@@ -1,62 +1,80 @@
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0; padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
   background: #f9f9f9;
   color: #333;
 }
+
 header {
   background: #222;
   color: #fff;
   padding: 20px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
+
 nav {
   background: #444;
   padding: 10px;
   text-align: center;
 }
+
 nav a {
   color: #fff;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
 }
+
 section {
   padding: 40px;
   max-width: 900px;
   margin: auto;
 }
+
 h2 {
+  font-family: 'Montserrat', sans-serif;
   color: #222;
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
 }
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+p {
+  line-height: 1.6;
 }
+
+button {
+  background: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background: #d62828;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 input, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-button {
-  background: #222;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
+
 footer {
   background: #222;
   color: #fff;
@@ -64,15 +82,17 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
 .votacion {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-.votacion div {
-  background: #eee;
-  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 6px;
-  text-align: center;
-  width: 40%;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.votacion h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
 }
