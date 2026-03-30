@@ -3,25 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Dale Vuelta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Encabezado con logo SVG -->
+  <!-- Encabezado con logo SVG externo -->
   <header>
-    <svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="60" font-family="Montserrat, sans-serif" font-size="60" fill="white">DALE VUELTA</text>
-    </svg>
+    <img src="logo.svg" alt="Logo Dale Vuelta" class="logo">
     <p class="contacto">Contacto: alapaginadalevuelta@gmail.com | @dalevueltaalap</p>
   </header>
 
   <!-- Menú de navegación -->
   <nav>
-    <a href="#quienes">Quiénes somos</a>
-    <a href="#juegos">Juegos</a>
-    <a href="#premios">Premios</a>
-    <a href="#programas">Programas</a>
-    <a href="#participantes">Participantes</a>
-    <a href="#contacto">Contacto</a>
+    <button class="menu-toggle">☰</button>
+    <div class="menu">
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#premios">Premios</a>
+      <a href="#programas">Programas</a>
+      <a href="#participantes">Participantes</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </nav>
 
   <!-- Sección Quiénes somos -->
@@ -34,7 +36,7 @@
   </section>
 
   <!-- Sección Juegos -->
-  <section id="juegos">
+  <section id="juegos" class="grid">
     <div class="bloque">
       <h2>Citas a ciegas</h2>
       <figure>
@@ -52,16 +54,15 @@
       <p>Trivia, interactividad, desafíos y diversión en equipo.</p>
       <button>MÁS JUEGOS</button>
     </div>
-  </section>
 
-  <!-- Sección Premios -->
-  <section id="premios">
-    <h2>Premios y más</h2>
-    <figure>
-      <img src="img/premios.jpg" alt="Imagen Premios">
-    </figure>
-    <p>Recompensas especiales, beneficios exclusivos y contenido adicional para los participantes.</p>
-    <button>VER PREMIOS</button>
+    <div class="bloque">
+      <h2>Premios y más</h2>
+      <figure>
+        <img src="img/premios.jpg" alt="Imagen Premios">
+      </figure>
+      <p>Recompensas especiales, beneficios exclusivos y contenido adicional para los participantes.</p>
+      <button>VER PREMIOS</button>
+    </div>
   </section>
 
   <!-- Formulario -->
