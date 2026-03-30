@@ -6,11 +6,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Encabezado con logo SVG -->
   <header>
-    <h1>DALE VUELTA</h1>
-    <p>@dalevueltaalap | alapaginadalevuelta@gmail.com</p>
+    <svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="60" font-family="Montserrat, sans-serif" font-size="60" fill="white">DALE VUELTA</text>
+    </svg>
+    <p class="contacto">Contacto: alapaginadalevuelta@gmail.com | @dalevueltaalap</p>
   </header>
 
+  <!-- Menú de navegación -->
   <nav>
     <a href="#quienes">Quiénes somos</a>
     <a href="#juegos">Juegos</a>
@@ -20,27 +24,47 @@
     <a href="#contacto">Contacto</a>
   </nav>
 
+  <!-- Sección Quiénes somos -->
   <section id="quienes">
     <h2>Quiénes somos</h2>
+    <figure>
+      <img src="img/quienes.jpg" alt="Imagen Quiénes somos">
+    </figure>
     <p>Conexiones genuinas, sorpresas y experiencias interactivas para todos los participantes.</p>
   </section>
 
+  <!-- Sección Juegos -->
   <section id="juegos">
-    <h2>Citas a ciegas</h2>
-    <p>Una experiencia sin vista para generar una conexión genuina.</p>
-    <button>MÁS INFORMACIÓN</button>
+    <div class="bloque">
+      <h2>Citas a ciegas</h2>
+      <figure>
+        <img src="img/citas.jpg" alt="Imagen Citas a ciegas">
+      </figure>
+      <p>Una experiencia sin vista para generar una conexión genuina.</p>
+      <button>MÁS INFORMACIÓN</button>
+    </div>
 
-    <h2>Otros juegos</h2>
-    <p>Trivia, interactividad, desafíos y diversión en equipo.</p>
-    <button>MÁS JUEGOS</button>
+    <div class="bloque">
+      <h2>Otros juegos</h2>
+      <figure>
+        <img src="img/juegos.jpg" alt="Imagen Otros juegos">
+      </figure>
+      <p>Trivia, interactividad, desafíos y diversión en equipo.</p>
+      <button>MÁS JUEGOS</button>
+    </div>
   </section>
 
+  <!-- Sección Premios -->
   <section id="premios">
     <h2>Premios y más</h2>
+    <figure>
+      <img src="img/premios.jpg" alt="Imagen Premios">
+    </figure>
     <p>Recompensas especiales, beneficios exclusivos y contenido adicional para los participantes.</p>
     <button>VER PREMIOS</button>
   </section>
 
+  <!-- Formulario -->
   <section id="formulario">
     <h2>Formulario de inscripción</h2>
     <form id="inscripcionForm">
@@ -55,30 +79,47 @@
     </form>
   </section>
 
+  <!-- Participantes -->
   <section id="participantes">
     <h2>Participantes</h2>
+    <div class="grid">
+      <figure>
+        <img src="img/pedro.jpg" alt="Pedro">
+        <figcaption>Pedro (izquierda) - 670 votos</figcaption>
+      </figure>
+      <figure>
+        <img src="img/martin.jpg" alt="Martín">
+        <figcaption>Martín (derecha) - 575 votos</figcaption>
+      </figure>
+    </div>
     <div class="votacion">
       <h3>Votación de citas</h3>
       <p>Química increíble / Nula conexión</p>
       <p>Votos: 1,245</p>
     </div>
-    <div class="votacion">
-      <h3>Votación de participantes</h3>
-      <p>Pedro (izquierda): 670 votos</p>
-      <p>Martín (derecha): 575 votos</p>
-    </div>
   </section>
 
+  <!-- Programas -->
   <section id="programas">
     <h2>Próximos juegos</h2>
-    <ul>
-      <li>Miércoles 25/10 - Trivia veloz</li>
-      <li>Viernes 27/10 - El reto de los abrazos</li>
-      <li>Domingo 29/10 - Dale vuelta al corazón</li>
-    </ul>
-    <button>INSCRÍBETE AQUÍ</button>
+    <div class="grid">
+      <figure>
+        <img src="img/trivia.jpg" alt="Trivia veloz">
+        <figcaption>Miércoles 25/10 - Trivia veloz</figcaption>
+      </figure>
+      <figure>
+        <img src="img/abrazos.jpg" alt="Reto de los abrazos">
+        <figcaption>Viernes 27/10 - El reto de los abrazos</figcaption>
+      </figure>
+      <figure>
+        <img src="img/corazon.jpg" alt="Dale vuelta al corazón">
+        <figcaption>Domingo 29/10 - Dale vuelta al corazón</figcaption>
+      </figure>
+    </div>
+    <button class="inscribete">INSCRÍBETE AQUÍ</button>
   </section>
 
+  <!-- Contacto -->
   <section id="contacto">
     <h2>Contáctanos</h2>
     <form id="contactForm">
@@ -89,9 +130,10 @@
       <button type="submit">ENVIAR</button>
     </form>
     <p>@dalevueltaalap | dalevueltaalap@email.com</p>
-    <p>Términos y condiciones</p>
+    <p><a href="#">Términos y condiciones</a></p>
   </section>
 
+  <!-- Pie -->
   <footer>
     <p>&copy; 2026 Dale Vuelta - Todos los derechos reservados</p>
   </footer>
