@@ -1,4 +1,4 @@
-// --- Menú hamburguesa ---
+// --- Menú hamburguesa con barra fija ---
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 
